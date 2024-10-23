@@ -3,7 +3,7 @@ const About = ({ removeProduct }) => {
 
         <div className="ml-16 border my-5 p-5">
             <img src={removeProduct.img} alt="" />
-            <h2 className="my-4">{removeProduct.product_name}</h2>
+            <h2 className="my-5">{removeProduct.product_name}</h2>
         </div>
     );
 };
