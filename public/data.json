@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co.com/gytP07P/images.jpg",
+        "product_name": "UltraFlex Yoga Mat",
+        "description": "A premium, eco-friendly yoga mat with non-slip surface and extra cushioning for comfort during your workouts.",
+        "price": 39.99,
+        "category": "Fitness & Wellness"
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co.com/6NgLMJ6/download.jpg",
+        "product_name": "SkyBright Noise-Cancelling",
+        "description": "Wireless over-ear headphones with active noise cancellation and 20 hours of battery life for an immersive audio experience.",
+        "price": 89.95,
+        "category": "Electronics"
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co.com/ZmFm8Cn/download.jpg",
+        "product_name": "AquaPure Water Filter Pitcher",
+        "description": "Sleek and compact water filter pitcher that removes impurities and enhances taste, holding up to 10 cups of water.",
+        "price": 25.49,
+        "category": "Home & Kitchen"
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co.com/jz79ydx/download.jpg",
+        "product_name": "SolarGlow Outdoor String ",
+        "description": "Set of 50 solar-powered LED string lights perfect for illuminating your patio or garden with a warm, ambient glow.",
+        "price": 22.99,
+        "category": "Outdoor & Garden"
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co.com/Pc2GJCr/download.jpg",
+        "product_name": "CozyNest Weighted Blanket",
+        "description": "Ultra-soft weighted blanket designed to improve sleep quality by providing soothing pressure and warmth.",
+        "price": 79.99,
+        "category": "Bedding & Home Decor"
+    }
+]
