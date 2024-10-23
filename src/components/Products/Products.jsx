@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 
-const Products = ({ handleAddToCats, id }) => {
+const Products = ({ handleAddToCats }) => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
@@ -25,5 +26,9 @@ const Products = ({ handleAddToCats, id }) => {
         </div>
     );
 };
+Products.propTypes = {
+    handleAddToCats: PropTypes.func
+
+}
 
 export default Products;

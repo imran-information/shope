@@ -1,5 +1,5 @@
 
-
+import PropTypes from 'prop-types';
 const Cart = ({ product, handleRemoveToCats }) => {
 
 
@@ -11,5 +11,9 @@ const Cart = ({ product, handleRemoveToCats }) => {
         </div>
     );
 };
+Cart.propTypes = {
+    product: PropTypes.object,
+    handleRemoveToCats: PropTypes.func
 
+}
 export default Cart;

@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 const Product = ({ product, handleAddToCats, }) => {
 
-    const { id, img, product_name, description, price } = product
+    const { img, product_name, description, price } = product
 
     return (
         <div className=" border p-5 text-center">
@@ -8,9 +9,14 @@ const Product = ({ product, handleAddToCats, }) => {
             <h2 className="text-2xl my-5">{product_name}</h2>
             <p>{description}</p>
             <p className="my-5">${price}</p>
-            <button onClick={() => handleAddToCats(product, product.id)} className="">Add to cart</button>
+            <button onClick={() => handleAddToCats(product)} className="">Add to cart</button>
         </div>
     );
 };
+Product.propTypes = {
+    handleAddToCats: PropTypes.func,
+    product: PropTypes.object
+
+}
 
 export default Product;

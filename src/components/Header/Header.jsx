@@ -1,5 +1,4 @@
-
-
+import PropTypes from 'prop-types';
 import logo from '../../assets/react.svg'
 const Header = ({ product, addPrice }) => {
 
@@ -19,5 +18,9 @@ const Header = ({ product, addPrice }) => {
         </nav>
     );
 };
+Header.propTypes = {
+    product: PropTypes.array,
+    addPrice: PropTypes.number
+}
 
 export default Header;

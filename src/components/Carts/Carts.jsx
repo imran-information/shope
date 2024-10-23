@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Cart from "../Cart/Cart";
 import About from "../About/About"
 const Carts = ({ handleComponent, toggleComponent, product, handleRemoveToCats, removeProduct }) => {
@@ -19,5 +20,15 @@ const Carts = ({ handleComponent, toggleComponent, product, handleRemoveToCats, 
         </div>
     );
 };
+Carts.propTypes = {
+    handleComponent: PropTypes.func,
+    product: PropTypes.array,
+    toggleComponent: PropTypes.object,
+    handleRemoveToCats: PropTypes.func,
+    removeProduct: PropTypes.array
+
+
+}
+
 
 export default Carts;

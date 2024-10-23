@@ -15,10 +15,6 @@ function App() {
   const [addPrice, setAddPrice] = useState(0);
 
 
-  console.log(addPrice);
-
-
-
   const handleAddToCats = (p) => {
     const exist = product.find(newP => newP.id == p.id)
     if (exist) {

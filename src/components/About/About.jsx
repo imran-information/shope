@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 const About = ({ removeProduct }) => {
     return (
 
@@ -8,4 +9,7 @@ const About = ({ removeProduct }) => {
     );
 };
 
+About.propTypes = {
+    removeProduct: PropTypes.object
+}
 export default About;
