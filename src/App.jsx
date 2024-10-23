@@ -10,10 +10,33 @@ function App() {
     active: true
   })
 
-  const [carts, setCarts] = useState([])
+  const [product, setProduct] = useState([])
+  const [removeProduct, setRemoveProduct] = useState([])
+  const [addPrice, setAddPrice] = useState(0);
 
-  const handleAddToCats = () => {
-    console.log('btn clicked');
+
+  console.log(addPrice);
+
+
+
+  const handleAddToCats = (p) => {
+    const exist = product.find(newP => newP.id == p.id)
+    if (exist) {
+      alert('already added ')
+    }
+    else {
+      const newProduct = [...product, p]
+      setProduct(newProduct)
+      setAddPrice(addPrice + p.price)
+    }
+  }
+
+
+  const handleRemoveToCats = (prouct) => {
+    const remove = product.filter(mId => mId.id !== prouct.id)
+    setProduct(remove)
+    setRemoveProduct(prouct)
+    setAddPrice(addPrice - prouct.price)
 
   }
 
@@ -37,10 +60,10 @@ function App() {
   return (
     <>
 
-      <Header></Header>
+      <Header addPrice={addPrice} product={product}></Header>
       <main className='flex w-10/12 mx-auto my-5'>
         <Products handleAddToCats={handleAddToCats}></Products>
-        <Carts handleComponent={handleComponent} toggleComponent={toggleComponent}> </Carts>
+        <Carts removeProduct={removeProduct} handleRemoveToCats={handleRemoveToCats} product={product} handleComponent={handleComponent} toggleComponent={toggleComponent}> </Carts>
       </main>
     </>
   )

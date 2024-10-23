@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 
-const Products = ({ handleAddToCats }) => {
+const Products = ({ handleAddToCats, id }) => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
